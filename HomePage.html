@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script> 
+  function zoom() {
+            document.body.style.zoom = "65%" 
+        }
+        zoom();
+  </script>
+  
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+      border-right:1px solid #bbb;
+    }
+    
+    li:last-child {
+      border-right: none;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+    
+    .active {
+      background-color: #04AA6D;
+    }
+
+    </style>
+</head>
+
+<body background="dist/img/photos-2.PNG" ; onload = "zoom()">
+  <div></div>
+    <h1 style="position:fixed;left: 1000px;top:300px; font-size: 90px;color: aliceblue;"> Oμάδα 3</h1>
+    <h2 style="position:fixed;left: 600px;top:420px; font-size: 70px;color: aliceblue;">Εισαγωγή στην επιστήμη του ΗΜΤΥ</h2>
+
+    <ul id="nav" style="position: fixed;left: 950px;px;top: 550px;">
+        <li><a class="active" href="Main.html">Αρχική</a></li>
+        <li><a href="dist/html/Animated_Heatmap.html">Δυναμικό Heatmap</a></li>
+        <li><a href="dist/html/graphs.html">Γραφήματα</a></li>
+        <li><a href="dist/html/info.html">Πληροφορίες</a></li>
+      </ul>
+
+      
+</body>

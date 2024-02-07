@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="dist/css/styling_basic.css">
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+
+
+<div id="mapid"></div>
+
+<script src="dist/js/variables.js"></script>
+<script src="dist/js/map.js"></script>
+
+<link rel="stylesheet" href="dist/css/leaflet.extra-markers.min.css">
+<script src="dist/js/leaflet.extra-markers.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+<script src="dist/js/heatmap.js"></script>
+<script src="dist/js/leaflet-heatmap.js"></script>
+
+
+</head>
+
+
+<body>
+
+  <img src="dist/img/sense_city.png" style="position: fixed;left: 200px;top: 0px;"></img>
+  <img src="dist/img/logo.png" style="position: fixed;left: 0px;top: 1080px;"></img>
+  <img src="dist/img/markers.png" style="position: fixed;left: 1100px;top: 830px;"></img>
+
+  <button id="btn1" type="button" class="btn btn-success" style="position:fixed;left:650px;top:500px;" >Issues  </button>
+  
+  
+  <div id="status_p" style="position:fixed;left: 700px;top:10px">
+    <!-- status selection -->
+    <p>  Select Status: </p>
+    <input type="radio" name="status" id="stat_input" value="CONFIRMED" > Confirmed</input><br />
+    <input type="radio" name="status" id="stat_input" value="RESOLVED"> Resolved</input><br />
+    <input type="radio" name="status" id="stat_input" value=""> Both</input><br />
+  </div>
+
+  <div id="start_date_p" style="position:fixed;left: 500px;top:300px">
+    <!-- start date selection -->
+    <p>   Select Start Date:</p>
+    <input type="date" name="start_date" id="start_date"><br /><br />
+  </div>
+  
+  <div id="end_date_p" style="position:fixed;left: 700px;top:300px">
+    <!-- end date selection -->
+    <p>   Select End Date:</p>
+    <input type="date" name="end_date" id="end_date"><br /><br />
+  </div>
+
+
+  
+ 
+    
+  <div id="issue_p" style="position:fixed;left: 500px;top:10px" >
+    <!-- city selection -->
+    <p>  Select Category:</p>
+    <input type="radio" name="issue" id="issue" value="garbage" > Garbage</input><br />
+    <input type="radio" name="issue" id="issue" value="lighting"> Lighting</input><br />
+    <input type="radio" name="issue" id="issue" value="plumbing"> Plumbing</input><br />
+    <input type="radio" name="issue" id="issue" value="road-constructor"> Road Construction</input><br />
+    <input type="radio" name="issue" id="issue" value="protection-policy"> Protection Policy</input><br />
+    <input type="radio" name="issue" id="issue" value="green"> Green</input><br />
+    <input type="radio" name="issue" id="issue" value="enviroment"> Enviroment</input><br />
+    <input type="radio" name="issue" id="issue" value=""> All</input><br />
+
+  </div>
+  
+  <div id="all_p" style="position:fixed;left: 570px;top:450px;" >
+    <!-- city selection -->
+    <input type="checkbox" name="all_data" id="all_data" value="1" > Fetch All Data without filters: </input><br />
+  </div>
+
+  
+
+
+  <ul id="nav">
+    <li><a class="active" href="Main.html">Αρχική</a></li>
+    <li><a href="dist/html/Animated_Heatmap.html">Δυναμικό Heatmap</a></li>
+    <li><a href="dist/html/graphs.html">Γραφήματα</a></li>
+    <li><a href="dist/html/info.html">Πληροφορίες</a></li>
+  </ul>
+  
+</body>
+</html>

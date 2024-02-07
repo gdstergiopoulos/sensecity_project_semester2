@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Graphs</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/st.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+    <script type="text/javascript" src="../js/fun.js"></script>
+
+    <link rel="stylesheet" href="../css/styling_basic.css">
+      
+
+
+</head>
+
+
+<body>
+    
+  <script> 
+    document.body.style.zoom="80%"
+    </script>
+    
+    <h2 style="position:fixed;left: 900px;top:0px">Γραφήματα</h2>
+  
+    <img src="../img/sense_city.png" style="position: fixed;left: 200px;top: 0px;"></img>
+    <img src="../img/logo.png" style="position: fixed;left: 0px;top: 1080px;"></img>
+    
+    <div id="start_date_p3" style="position:fixed;left: 320px;top:300px">
+      <!-- start date selection -->
+      <p> Select Start Date:</p>
+      <input type="date" name="start_date3" id="start_date3"><br /><br />
+    </div>
+  
+    <div id="end_date_p3" style="position:fixed;left: 320px;top:410px">
+      <!-- end date selection -->
+      <p> Select End Date:</p>
+      <input type="date" name="end_date3" id="end_date3"><br /><br />
+    </div>
+  
+    <ul id="nav" style="position: fixed; left: 0px; top: 0px;">
+      <li><a class="active" href="../../Main.html">Αρχική</a></li>
+      <li><a href="Animated_Heatmap.html">Δυναμικό Heatmap</a></li>
+      <li><a href="graphs.html">Γραφήματα</a></li>
+      <li><a href="info.html">Πληροφορίες</a></li>
+    </ul>
+
+    <div class="container">
+        
+        <div>
+            <button class="btn btn-success" onclick="getData()" id="myBtn1" style="position: fixed; left: 370px;top: 550px;">DATA</button>
+            <canvas id="canvas"></canvas>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
